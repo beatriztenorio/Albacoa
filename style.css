@@ -1,0 +1,629 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #032030, #16528a);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Ajustando o espaçamento entre os itens do menu */
+nav ul {
+    display: flex;
+    justify-content: center; /* Alinha os itens no centro */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+nav ul li {
+    margin: 0 -30px; /* Ajuste o valor de 15px para o espaçamento que você deseja */
+}
+
+/* Caso você tenha algum estilo específico para o item de menu ativo */
+nav ul li.active {
+    font-weight: bold;
+}
+
+
+/* ESTILO DO CABEÇALHO */
+header {
+    padding: 50px 4%;
+    
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 05px;
+}
+
+h2.titulo {
+    color: #a0a9b0b5;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 125px; /* Adiciona espaço acima do título */
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 0 4%;
+    margin-top: 0;
+    position: relative;
+}
+
+section.topo-do-site .flex {
+    align-items: flex-start;
+    gap: 90px;
+}
+
+.topo-do-site .txt-topo-site {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.topo-do-site h1 {
+    color: #7981897a;
+    font-size: 80px;
+    text-align: left;
+    line-height: 86px;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #a0a9b0b5;
+    margin: 50px 0;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO DE CONTATO */
+.btn-contato button {
+    background-color: rgba(22, 82, 138, 0.24);
+    color: rgba(220, 227, 233, 0.86);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.10s, color 0.2s;
+    margin-top: 25px;
+    text-align: left;
+}
+
+
+
+/* ESTILO SOBRE NOS */
+section.sobre-nos {
+    padding: 80px 4%;
+}
+
+section.sobre-nos .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+section.sobre-nos .img-sobre img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 7px 50px rgba(137, 7, 7, 0.1);
+}
+
+section.sobre-nos .txt-sobre {
+    color: #fff;
+    max-width: 600px;
+}
+
+section.sobre-nos h2 {
+    color: #c0cad2b5;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+section.sobre-nos p {
+    color: #dbe5e3;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Mantém o botão circular */
+    border: none; /* Remove qualquer borda */
+    margin: 0 5px; /* Define o espaçamento horizontal */
+    padding: 0; /* Remove espaçamentos internos */
+    background-color: #777a7e42;
+    font-size: 25px;
+    cursor: pointer;
+}
+.btn-social a {
+    text-decoration: none; /* Remove sublinhados */
+    display: inline-block; /* Garante que o estilo seja aplicado corretamente */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ESTILO PARA A SEÇÃO DE SOLUÇÕES DE TI */
+.solucoes-de-ti {
+    padding: 50px;
+    background: linear-gradient(to right, #032030, #16528a); /* Gradiente azul */
+    
+}
+
+.img-sobre img {
+    width: 40%; /* Ajusta a largura da imagem */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave para transformação e sombra */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.img-sobre img:hover {
+    transform: scale(1.1); /* Expande a imagem em 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destacar o elemento */
+}
+
+.solucoes-de-ti-box {
+    flex: 1;
+    background-color: #032030, #16528a;
+    
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(164, 129, 129, 0.1);
+    text-align: center;
+    margin-top: 80px;
+    transition: .2s;
+}
+
+.solucoes-de-ti-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #898a995a;
+}
+
+.solucoes-de-ti-box h3 {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #e4e6e7e1;
+}
+
+.solucoes-de-ti-box p {
+    font-size: 17px;
+    color: #a0a9b0b5;
+    margin-top: 10px;
+}
+
+/* LAYOUT FLEX */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #8b9aaa;
+    transform: scale(1.1);
+}
+
+/* Efeito de foco para acessibilidade */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(95, 100, 105, 0.6);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+}
+
+/* Estilo básico do botão Enviar */
+form .btn-enviar input {
+    width: 120px;
+    background-color: #16528a;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito de hover no botão Enviar */
+form .btn-enviar input:hover {
+    background-color: #0d3b62;
+    transform: scale(1.1);
+}
+
+/* Efeito de foco para acessibilidade */
+form .btn-enviar input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(22, 82, 138, 0.6);
+}
+
+/* ESTILO RODA PE */
+footer {
+    padding: 40px;
+    box-shadow: 0 0 40px 10px #fff;
+}
+
+hr {
+    padding: 30px 4%;
+    box-shadow: 0 0 40px 10px #5d6fd4;
+}
+
+/* Estilo do link para diminuir a caixa */
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 50px 50px;  /* Ajuste o padding para reduzir o tamanho da caixa */
+    font-size: 14px;    /* Ajuste o tamanho da fonte conforme necessário */
+    
+}
+
+/* Estilo para a seção 'Soluções de TI' */
+section.solucoes-de-ti {
+    padding: 54px 4%;
+    background-color: #032030;
+}
+
+/* Estilo para o ID 'suporte-especializado' */
+#suporte-especializado {
+    padding-top: 50px;
+}
+
+
+
+/* RODA-PÉ*/
+
+footer {
+    padding: 05px 2%; /* Reduz o espaçamento interno */
+    box-shadow: 0 0 40px 10px #5d5d674b;
+    background-color: #032030, #16528a; /* Cor de fundo única */
+    color: #fff; /* Cor do texto */
+    font-size: 14px;
+}
+
+footer .interface {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+footer .rodape-coluna ul {
+    list-style: none; /* Remove as bolinhas */
+    padding: 0; /* Remove o espaçamento à esquerda */
+    margin: 0; /* Remove a margem padrão */
+}
+
+footer .rodape-coluna ul li {
+    margin-bottom: 3px; /* Reduz o espaçamento entre os itens */
+    margin-top: 10px;
+}
+
+footer .rodape-credito {
+    text-align: center
+}
+
+
+header nav ul li a.active {
+    color: #ffaa00; /* Cor do link ativo */
+    font-weight: bold; /* Pode adicionar um destaque */
+}
+
+
+footer .rodape-logo {
+    text-align: center; /* Centraliza a imagem no rodapé */
+    margin-top: 30px; /* Adiciona espaçamento acima da imagem */
+    width: 30%; /* A imagem ocupará 50% da largura do contêiner */
+}
+
+footer .rodape-logo {
+    max-width: 100%; /* Garante que a imagem não ultrapasse os limites do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas, opcional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
+}
+
+
+
+.btn-contato button:hover {
+    background-color: #16528a;  /* Exemplo de cor para o hover */
+    transform: scale(1.05);  /* Leve aumento de tamanho para dar destaque */
+}
+
+/* Define o estilo inicial do título */
+.animar-titulo {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Levemente deslocado para baixo */
+    animation: aparecerTexto 3s ease-out forwards; /* Aplica a animação */
+}
+
+/* Define a animação */
+@keyframes aparecerTexto {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header > .interface {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    section.topo-do-site .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.sobre-nos .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.sobre-nos .img-sobre img {
+        width: 80%;
+    }
+
+    section.sobre-nos .txt-sobre {
+        max-width: 100%;
+    }
+
+    .solucoes-de-ti-box {
+        flex: 1 1 100%;
+    }
+
+    form {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2.titulo {
+        font-size: 24px;
+    }
+
+    section.topo-do-site h1 {
+        font-size: 40px;
+    }
+}
+
+
+
+/* ESTILO PARA A SEÇÃO DE PROJETOS */
+.projetos {
+    padding: 80px 4%;
+    background: linear-gradient(to right, #032030, #16528a); /* Gradiente azul */
+}
+
+.projetos .titulo {
+    color: #a0a9b0b5;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* BOX DE PROJETO INDIVIDUAL */
+.projeto-box {
+    flex: 1;
+    background-color: #08305b3f; /* Fundo com leve transparência */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(164, 129, 129, 0.1);
+    text-align: center;
+    transition: .2s;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+/* EFEITO HOVER NO BOX DO PROJETO */
+.projeto-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #898a995a;
+}
+
+/* IMAGEM DO PROJETO */
+.projeto-box img {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Tamanho máximo para a imagem */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* TÍTULO DO PROJETO */
+.projeto-box h3 {
+    font-size: 15px;
+    color: #c0c6c9e1;
+    margin-bottom: 10px;
+}
+
+/* LINK NO TÍTULO DO PROJETO */
+.projeto-box h3 a {
+    color: #e4e6e7e1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.projeto-box h3 a:hover {
+    color: #1b0b75; /* Destaque ao passar o mouse */
+}
+
+/* DESCRIÇÃO DO PROJETO */
+.projeto-box p {
+    font-size: 16px;
+    color: #a0a9b0b5;
+}
+
+/* LAYOUT FLEX PARA PROJETOS */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* RESPONSIVIDADE PARA TELAS PEQUENAS */
+@media (max-width: 768px) {
+    .projeto-box {
+        flex-basis: 100%; /* Ocupa toda a largura em telas menores */
+    }
+}
+
+/* Altera a cor, o tamanho da seta de navegação e desce o botão */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #5b6875; /* Altere para a cor que desejar */
+    width: 0px;  /* Diminui o tamanho da seta */
+    height: 30px; /* Diminui o tamanho da seta */
+    border-radius: 50%; /* Deixa a seta com bordas arredondadas */
+}
+
+/* Ajuste da posição do botão de navegação */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 30px; /* Ajuste o tamanho do botão de controle */
+    height: 30px; /* Ajuste o tamanho do botão de controle */
+    top: 40%; /* Desce o botão, ajustando a distância da parte superior */
+}
+/* Alterando a cor do nome do projeto */
+.custom-title {
+    color: #FF5733; /* Substitua essa cor pela que você preferir */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Torna o texto em negrito */
+}
+
+/* Alterando a cor quando o mouse passar sobre o nome do projeto */
+.custom-title:hover {
+    color: #C70039; /* Cor para quando passar o mouse */
+}
+/* Altera a cor do nome 'Galeria' */
+.galeria-link {
+    color: #FF5733; /* Substitua por qualquer cor desejada */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Altera a cor quando o mouse passar sobre o nome 'Galeria' */
+.galeria-link:hover {
+    color: #C70039; /* Cor para quando o mouse passar sobre o link */
+}
+
+/* Reduzir a largura das imagens dentro do carrossel, mas sem diminuir tanto */
+.carousel-inner .carousel-item img {
+    width: 50%; /* Ajuste a porcentagem conforme necessário */
+    max-width: 10000px; /* Define um tamanho máximo para as imagens */
+    margin: 0 auto; /* Centraliza as imagens */
+}
+
+/* Ajustar a largura do container do carrossel para um valor mais moderado */
+#carouselExampleIndicators {
+    width: 70%; /* Ajuste a porcentagem conforme necessário */
+    margin: 0 auto; /* Centraliza o carrossel */
+}
+
+
+
+
+/* Ajuste para o tamanho da imagem no carrossel */
+.carousel-img {
+    max-width: 40%;  /* Agora limitamos a largura da imagem para 40% */
+    height: auto;    /* Mantém a proporção da imagem */
+    margin: 0 auto;  /* Centraliza a imagem */
+    margin-top: 50px; /* Aumenta o espaço superior da imagem */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .carousel-img {
+        max-width: 60%;  /* Ajusta a largura para 60% em telas menores */
+        margin-top: 50px; /* Ajusta o espaço superior para telas menores */
+    }
+}
+
+/* Ajuste do carrossel */
+#toolsCarousel {
+    width: 15%; /* Define a largura do carrossel para 15% do contêiner pai */
+    margin: 0 auto; /* Centraliza o carrossel */
+    margin-top: 65px; /* Aumenta o espaço superior do carrossel */
+}
+
+/* Ajuste para a imagem dentro do carrossel */
+.carousel-img {
+    max-width: 100%; /* A imagem ocupa toda a largura do carrossel */
+    height: auto;
+    margin-top: 30px; /* Mantém o espaço superior para as imagens */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #toolsCarousel {
+        width: 80%; /* Ajusta a largura do carrossel para 80% em telas menores */
+        margin-top: 50px; /* Aumenta o espaço superior do carrossel em telas menores */
+    }
+}
